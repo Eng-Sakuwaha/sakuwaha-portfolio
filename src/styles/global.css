@@ -1,0 +1,21 @@
+/* ============================================
+   GLOBAL ENTRY POINT
+   ============================================ */
+
+@import './reset.css';
+@import './utilities.css';
+@import './navbar.css';
+@import './hero.css';
+@import './about.css';
+@import './skills.css';
+@import './achievements.css';
+@import './projects.css';
+@import './designs.css';
+@import './timeline.css';
+@import './certifications.css';
+@import './interests.css';
+@import './contact.css';
+@import './footer.css';
+@import './floating-whatsapp.css';
+@import './animations.css';
+@import './responsive.css';

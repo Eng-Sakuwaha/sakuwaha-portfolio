@@ -1,0 +1,90 @@
+/* ============================================
+   SKILLS SECTION
+   ============================================ */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+body.dark-mode .skill-category {
+  background: #112240;
+  border-color: #1E3A5F;
+}
+
+.skill-category:hover {
+  border-color: #2563EB;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.08);
+  transform: translateY(-2px);
+}
+
+body.dark-mode .skill-category:hover {
+  border-color: #60A5FA;
+  box-shadow: 0 4px 16px rgba(96, 165, 250, 0.08);
+}
+
+.skill-category h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0B1E33;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+body.dark-mode .skill-category h3 {
+  color: #F1F5F9;
+}
+
+.skill-category h3 svg {
+  color: #2563EB;
+  flex-shrink: 0;
+}
+
+body.dark-mode .skill-category h3 svg {
+  color: #60A5FA;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  background-color: #F1F5F9;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #475569;
+  transition: all 0.15s ease;
+  cursor: default;
+}
+
+body.dark-mode .skill-badge {
+  background-color: #1E293B;
+  color: #CBD5E1;
+}
+
+.skill-badge:hover {
+  background-color: #DBEAFE;
+  color: #1D4ED8;
+  transform: translateY(-1px);
+}
+
+body.dark-mode .skill-badge:hover {
+  background-color: rgba(37, 99, 235, 0.2);
+  color: #93C5FD;
+}

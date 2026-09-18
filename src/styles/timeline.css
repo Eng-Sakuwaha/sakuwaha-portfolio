@@ -1,0 +1,155 @@
+/* ============================================
+   TIMELINE (Experience, Leadership, Education)
+   ============================================ */
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #E2E8F0;
+}
+
+body.dark-mode .timeline::before {
+  background-color: #1E3A5F;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 0.25rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #2563EB;
+  border: 3px solid #F8FAFC;
+  transform: translateX(-6px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.dark-mode .timeline-dot {
+  border-color: #0B1E33;
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: translateX(-6px) scale(1.2);
+  box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.15);
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2563EB;
+  margin-bottom: 0.35rem;
+}
+
+body.dark-mode .timeline-date {
+  color: #60A5FA;
+}
+
+.timeline-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0B1E33;
+  margin-bottom: 0.2rem;
+}
+
+body.dark-mode .timeline-item h3 {
+  color: #F1F5F9;
+}
+
+.timeline-item .subtitle {
+  font-size: 0.9rem;
+  color: #64748B;
+  margin-bottom: 0.75rem;
+}
+
+body.dark-mode .timeline-item .subtitle {
+  color: #94A3B8;
+}
+
+.timeline-item p,
+.timeline-item ul {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+body.dark-mode .timeline-item p,
+body.dark-mode .timeline-item ul {
+  color: #94A3B8;
+}
+
+.timeline-item ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+  margin-top: 0.5rem;
+}
+
+.timeline-item ul li {
+  margin-bottom: 0.25rem;
+}
+
+/* ---------- Experience achievement highlight ---------- */
+.experience-achievement {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+  padding: 0.85rem 1.1rem;
+  background-color: #FEF3C7;
+  border-left: 4px solid #F59E0B;
+  border-radius: 0.5rem;
+  color: #92400E;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+body.dark-mode .experience-achievement {
+  background-color: rgba(252, 211, 77, 0.12);
+  border-left-color: #FCD34D;
+  color: #FCD34D;
+}
+
+.experience-achievement svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #F59E0B;
+}
+
+body.dark-mode .experience-achievement svg {
+  color: #FCD34D;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.5rem;
+  }
+
+  .experience-achievement {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+}

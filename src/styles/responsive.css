@@ -1,0 +1,161 @@
+/* ============================================
+   RESPONSIVE — Tablet & Mobile
+   ============================================ */
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    position: static;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .profile-photo-wrapper {
+    max-width: 340px;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta .btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.6rem, 6vw, 2.25rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interests-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.5rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .modal-content h2 {
+    font-size: 1.25rem;
+    padding-right: 2.5rem;
+  }
+}
+
+/* ---------- Small Mobile ---------- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero-badge {
+    font-size: 0.7rem;
+  }
+
+  .dashboard-card {
+    padding: 1rem;
+  }
+
+  .growing-section {
+    padding: 1.5rem;
+  }
+
+  .cert-card {
+    padding: 1rem;
+  }
+
+  .profile-photo-wrapper {
+    max-width: 280px;
+  }
+
+  .profile-photo-badge {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .coursework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item .value {
+    font-size: 0.85rem;
+  }
+}
+
+/* ---------- Large Desktop ---------- */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}

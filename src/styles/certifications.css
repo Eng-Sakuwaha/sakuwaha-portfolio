@@ -1,0 +1,182 @@
+/* ============================================
+   CERTIFICATIONS + COURSEWORK
+   ============================================ */
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.cert-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.2s ease;
+}
+
+body.dark-mode .cert-card {
+  background: #112240;
+  border-color: #1E3A5F;
+}
+
+.cert-card:hover {
+  border-color: #2563EB;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.06);
+  transform: translateY(-2px);
+}
+
+body.dark-mode .cert-card:hover {
+  border-color: #60A5FA;
+}
+
+/* ---------- Highlighted certificate (e.g., Internship Completion) ---------- */
+.cert-card-highlighted {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FEF3C7 100%);
+  border: 2px solid #F59E0B;
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.15);
+  position: relative;
+}
+
+body.dark-mode .cert-card-highlighted {
+  background: linear-gradient(135deg, #112240 0%, #1E2F4F 100%);
+  border-color: #FCD34D;
+  box-shadow: 0 8px 24px rgba(252, 211, 77, 0.15);
+}
+
+.cert-card-highlighted:hover {
+  border-color: #D97706;
+  box-shadow: 0 12px 32px rgba(245, 158, 11, 0.25);
+}
+
+body.dark-mode .cert-card-highlighted:hover {
+  border-color: #F59E0B;
+  box-shadow: 0 12px 32px rgba(252, 211, 77, 0.25);
+}
+
+.cert-card-highlighted .cert-icon {
+  background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%);
+  color: #0B1E33;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+body.dark-mode .cert-card-highlighted .cert-icon {
+  background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%);
+  color: #0B1E33;
+}
+
+/* ---------- Icon ---------- */
+.cert-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  background-color: #EFF6FF;
+  color: #2563EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+body.dark-mode .cert-icon {
+  background-color: rgba(37, 99, 235, 0.15);
+  color: #60A5FA;
+}
+
+/* ---------- Content ---------- */
+.cert-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.cert-card h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0B1E33;
+  margin-bottom: 0.15rem;
+  line-height: 1.35;
+}
+
+body.dark-mode .cert-card h4 {
+  color: #F1F5F9;
+}
+
+.cert-org {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #2563EB;
+  margin-bottom: 0.15rem;
+}
+
+body.dark-mode .cert-org {
+  color: #60A5FA;
+}
+
+.cert-card .year {
+  font-size: 0.8rem;
+  color: #64748B;
+}
+
+body.dark-mode .cert-card .year {
+  color: #94A3B8;
+}
+
+.cert-card-highlighted .year {
+  font-weight: 600;
+  color: #92400E;
+}
+
+body.dark-mode .cert-card-highlighted .year {
+  color: #FCD34D;
+}
+
+/* ---------- Coursework Grid ---------- */
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.coursework-item {
+  padding: 0.75rem 1rem;
+  background-color: #F8FAFC;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  color: #475569;
+  border: 1px solid #E2E8F0;
+  transition: all 0.15s ease;
+}
+
+body.dark-mode .coursework-item {
+  background-color: #112240;
+  border-color: #1E3A5F;
+  color: #CBD5E1;
+}
+
+.coursework-item:hover {
+  border-color: #2563EB;
+  color: #1D4ED8;
+}
+
+body.dark-mode .coursework-item:hover {
+  border-color: #60A5FA;
+  color: #93C5FD;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-card {
+    padding: 1rem;
+  }
+}
